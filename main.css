@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+Barras cinza - #1F1F1F
+Fundo cinza - #393C47
+Texto azul claro - #7FB2E8
+Degrade 1 -  #6C11CB e #297FFF
+Degrade 2 - #6C11CB e #297FFF
+Degrade 3 - #155CA8 e #393C47
+Degrade 4 - #834A8F e #1A2DAB
+Degrade 5 - #CDBC7F e #9E2521
+
+font-family: "Bungee", sans-serif;
+*/
+
+body{
+    background-color: #393C47;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+/*CABEÇALHO*/
+
+header {
+    background-color: #1F1F1F;
+    color: #ecf0f1;
+    box-shadow: 0px 18px 25px -15px #000000;
+}
+
+.vertcbar{
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 120px;
+    padding: 16px 0px;
+    box-shadow: -10px 20px 25px -15px #000000;
+}
+
+.vertcbar .container{
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vertcbar img{
+    height: 100px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 46px;
+    font-size: 18px;
+    position: relative;
+    top: -20px;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 200px;
+}
+
+.social{
+    height: 40px;
+    margin-right: 12px;
+}
+
+.perfil{
+    height: 50px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.car{
+    cursor: pointer;
+}
+
+.active{
+    color: rgb(167, 195, 247);
+    text-decoration: underline;
+}
+
+/*BANNEER*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 1200px;
+}
+
+.banner .container {
+    max-width: 1200px; /* Ou qualquer largura desejada */
+}
+
+.banner .container img{
+    width: 100%;
+    box-shadow: 10px 25px 25px -1px #000000;
+}
+
+/*INFO GAMES*/
+
+.info_games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px; 
+    width: 100%;
+}
+
+
+.info_games .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Ou qualquer largura desejada */
+}
+
+
+.info_range{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(108,17,203,1) 0%, rgba(41,127,255,1) 50%);
+    box-shadow: 0px 20px 25px -15px #000000;
+}
+
+.info_range_two{
+    margin-top: 120px;
+    background: linear-gradient(90deg, rgb(17, 166, 203) 20%, rgba(0,59,148,1) 78%);
+}
+
+
+
+.info_range .img_info{
+    width: 220px;
+    position: relative;
+    top: -100px;
+}
+
+.info_range .img_info img{
+    height: 380px;
+    width: 100%;
+}
+
+.info_range_two .img_info{
+    position: relative;
+    top: -100px;
+}
+
+.info_range_two .img_info img{
+    height: 300px;
+    
+}
+
+.info_range .info_text{
+    width: 60%;
+    padding: 20px 0px;
+}
+
+.info_range .info_text p{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.info_range .info_text button{
+    width: 260px;
+    padding: 10px;
+    background-color: #7FB2E8;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: "Bungee", sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*GAMES*/
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.games .container {
+    max-width: 1200px; /* Ou qualquer largura desejada */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.games .container .box_games{
+    width: 75%;
+}
+
+.box_games .header_game{
+    background: linear-gradient(90deg, rgba(21,92,168,1) 7%, rgba(57,60,71,1) 50%);
+    padding: 16px;
+}
+
+.box_games .boxes_games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.boxes_games .card_games{
+    padding: 8px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.boxes_games .card_games img{
+    box-shadow: 15px 15px 20px -10px #000000;
+    width: 100%;
+    height: 280px;
+}
+
+.boxes_games .card_games:hover{
+    background: linear-gradient(0deg,  rgba(21, 90, 168, 0) 7%, rgba(21, 92, 168, 0.829) 85%);
+}
+
+.card_games .name_game{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.nov_games{
+    margin-top: 60px;
+}
+
+/*ABOUT*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 0px;
+}
+
+.about .container{
+    max-width: 1200px; /* Ou qualquer largura desejada */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.box_about{
+    background: linear-gradient(90deg, rgba(131,74,143,1) 20%, rgba(64,147,241,1) 67%);
+    margin-top: 80px;
+    display: flex;
+    width: 80%;
+    height: 480px;
+    box-shadow: 15px 15px 20px -10px #000000;
+}
+
+.box_text_about{
+    padding: 20px 60px;
+}
+
+.box_text_about h1{
+    font-size: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.box_about .box_img_about img{
+    width: 380px;
+    position: relative;
+    top:-100px;
+}
+
+/*CONTATO*/
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    height: 130vh;
+}
+
+.contact .container{
+    max-width: 1200px; /* Ou qualquer largura desejada */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.boxform{
+    display: flex;
+    z-index: 20;
+}
+
+.boxform img{
+    width: 640px;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+
+.form_container{
+    background: linear-gradient(90deg, rgba(205,188,127,1) 10%, rgba(158,37,33,1) 67%);
+    box-shadow: 15px 15px 20px -10px #000000;
+    width: 500px;
+    height: 618px;
+    position: relative;
+    right: -80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    display: block;
+    width: 320px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+form{
+    z-index: 2;
+}
+
+form input{
+    margin-bottom: 10px;
+}
+
+form textarea{
+    resize: none;
+    height: 220px;
+    margin-bottom: 10px;
+}
+
+form button{
+    background-color: #ffffff;
+    color: #393C47;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 200px;
+    width: 120px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+input:focus, 
+textarea:focus{
+    outline-color: #182C61;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    height: 400px;
+}
+
+footer .container {
+    max-width: 1200px; /* Ou qualquer largura desejada */
+}
+
+.content_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_footer .info_footer{
+    width: 30%;
+}
+
+.content_footer .info_footer .logo{
+    height: 200px;
+    margin-top: -80px;
+}
+
+.content_footer .info_footer p{
+    font-size: 20px;
+}
+
+.content_footer h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline;
+    font-family: "Bungee", sans-serif;
+}
+
+.content_footer .links_footer li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content_footer .links_footer a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.rodape{
+    text-align: center;
+    padding: 25px 0px;
+    background-color: #000000;
+    color: #7FB2E8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
